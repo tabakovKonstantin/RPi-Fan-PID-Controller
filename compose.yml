@@ -1,0 +1,6 @@
+services:
+  fan:
+    build: .
+    container_name: fan
+    restart: unless-stopped
+    privileged: true

@@ -193,6 +193,7 @@ int main(void)
         }
         double error = SETPOINT_TEMP - temp / 1000.0;
         feedback = pid_next(&status, error);
+        //fprintf(stderr, "%d %f %d %f\n", dutycycle_data, feedback, SETPOINT_TEMP, temp/1000.0);
         if (isnan(feedback))
         {
             fputs("Feedback has been NaN, controller is abnormal.\n", stderr);
