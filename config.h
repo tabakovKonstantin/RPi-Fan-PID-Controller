@@ -10,11 +10,11 @@
 #define PWM_CLOCK_DIVIDER BCM2835_PWM_CLOCK_DIVIDER_2 // 9.6 MHz for steps
 #define PWM_CHANNEL 0 // GPIO 18
 #define PWM_MODE 1 // Mark-Space mode
-#define PWM_RANGE 960 // 9.6 MHz / 960 = 10 KHz
-#define DATA_LOWER_BOUND 480 // 1/2 Duty-cycle
-#define DATA_UPPER_BOUND 960 // 1/1 Duty-cycle
+#define PWM_RANGE 480 // 9.6 MHz / 960 = 10 KHz
+#define DATA_LOWER_BOUND 240 // 1/2 Duty-cycle
+#define DATA_UPPER_BOUND 480 // 1/1 Duty-cycle
 #define PERIOD 1 // second
-#define PID_BOUND 10
+#define PID_BOUND 100
 #define PID_K_P 2
 #define PID_K_I 1
 #define PID_K_D 1
